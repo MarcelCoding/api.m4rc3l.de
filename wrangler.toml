@@ -1,0 +1,20 @@
+name = "m4rc3l-api"
+type = "javascript"
+workers_dev = false
+zone_id = "b820a9fe742f410d3dfb40cc398c7577"
+account_id = "2a09613716e511a8fe8ca74abc084762"
+compatibility_date = "2021-10-23"
+
+routes = [
+    "api.m4rc3l.de/*"
+]
+
+kv_namespaces = [
+    { binding = "M4RC3L_API", id = "eb7736366b464a7aac0bea9006e1e3e8" }
+]
+
+[build]
+command = "npm run build"
+
+[build.upload]
+format = "service-worker"
